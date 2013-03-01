@@ -23,10 +23,10 @@ public final class RealisticTNTConfiguration {
     @SuppressWarnings("unchecked")
     public List<String> getEnabledWorlds() {
         if (enabledWorlds == null) {
-            enabledWorlds = new ArrayList<>();
+            enabledWorlds = new ArrayList<String>();
             enabledWorlds.addAll((Collection<? extends String>) config.getList(CONFIG_KEY_ENABLEDWORLDS));
         }
-        return new ArrayList<>(enabledWorlds);
+        return new ArrayList<String>(enabledWorlds);
     }
 
     public void setWorldEnabled(final World world, final boolean enable) {

@@ -87,7 +87,7 @@ final class BlockExclusion {
             YELLOW_FLOWER
     };
 
-    private static final Set<Material> materials = new HashSet<>();
+    private static final Set<Material> materials = new HashSet<Material>();
 
     static {
         for (int i = 0; i < m.length; i++) {
